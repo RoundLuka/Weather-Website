@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="wrapper">
+        <h1>Weather Forecast</h1>
+        <form>
+            <input type="text" name="targetCity" id="targetCity" placeholder="City" required/>
+            <button type="submit" id="searchBtn">Search</button>
+        </form>
+        <div id="displayContainer">
+    
+        </div>
+        <p id="celsiusTemp"></p>
+        <label id="changeUnitLabel" for="tempUnit">Select temperature unit</label>
+        <div id="changeUnitDiv">
+            
+            <select name="tempUnit" id="tempUnit">
+                <option value="celsius">Celsius °C</option>
+                <option value="fahrenheit">Fahrenheit °F</option>
+                <option value="kelvin">Kelvin K</option>
+            </select>
+            <p id="temperatureDisplay">0</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
